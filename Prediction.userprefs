@@ -1,0 +1,31 @@
+﻿<Properties StartupConfiguration="{42C055FE-A6BA-4693-8364-D16714C7E122}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Prediction/MyPage.xaml.cs">
+    <Files>
+      <File FileName="Prediction/App.xaml.cs" Line="11" Column="65" />
+      <File FileName="Prediction/DetailPage.xaml" Line="54" Column="1" />
+      <File FileName="Prediction/DetailPage.xaml.cs" Line="14" Column="25" />
+      <File FileName="Prediction/PredictionPage.xaml.cs" Line="45" Column="24" />
+      <File FileName="Prediction/PredictionPage.xaml" Line="81" Column="64" />
+      <File FileName="Prediction/RestService.cs" Line="117" Column="47" />
+      <File FileName="Prediction/App.xaml" Line="7" Column="1" />
+      <File FileName="Prediction/Profile.cs" Line="9" Column="23" />
+      <File FileName="Prediction/MyPage.xaml" Line="6" Column="1" />
+      <File FileName="Prediction/MyPage.xaml.cs" Line="10" Column="22" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/natixis-dev/Projects/Prediction/Prediction/PredictionPage.xaml.cs" relfile="Prediction/PredictionPage.xaml.cs" line="59" column="1" />
+      <Breakpoint file="/Users/natixis-dev/Projects/Prediction/Prediction/RestService.cs" relfile="Prediction/RestService.cs" line="103" column="1" />
+      <Breakpoint file="/Users/natixis-dev/Projects/Prediction/Prediction/RestService.cs" relfile="Prediction/RestService.cs" line="117" column="1" />
+      <Breakpoint file="/Users/natixis-dev/Projects/Prediction/Prediction/RestService.cs" relfile="Prediction/RestService.cs" line="111" column="1" />
+      <Breakpoint file="/Users/natixis-dev/Projects/Prediction/Prediction/RestService.cs" relfile="Prediction/RestService.cs" line="109" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Prediction.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.21813ED7-F931-44A2-8D37-3DB8D22A2760">
+    <MonoDevelop.MacDev.AppleDevelopmentTeam />
+  </MonoDevelop.Ide.ItemProperties.Prediction.iOS>
+  <MultiItemStartupConfigurations />
+</Properties>

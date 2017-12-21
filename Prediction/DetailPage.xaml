@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    x:Class="Prediction.DetailPage">
+	<StackLayout
+        Orientation="Vertical"
+        Padding="10"
+        BackgroundColor="White">
+        <!--<Label TextColor="Black"
+            FontSize="35"
+            XAlign="Center"
+            x:Name="Name"
+        />-->
+        <StackLayout 
+            Orientation="Horizontal"
+            Margin="0,0,0,10">
+            <Label TextColor="Black"
+                FontSize="17"
+                Text="Situation de famille:"
+            />
+            <Label TextColor="Black"
+                FontSize="20"
+                x:Name="SituationFamille"
+            />
+        </StackLayout>
+        <StackLayout 
+            Orientation="Horizontal"
+            Margin="0,0,0,10">
+            <Label TextColor="Black"
+                FontSize="17"
+                Text="Type de contrat:"
+            />
+            <Label TextColor="Black"
+                FontSize="20"
+                x:Name="TypeContrat"
+            />
+        </StackLayout>
+        <StackLayout 
+            Margin="0,0,0,10"
+            Orientation="Horizontal">
+            <Label TextColor="Black"
+                FontSize="17"
+                Text="Type d'habitation:"
+            />
+            <Label TextColor="Black"
+                FontSize="20"
+                x:Name="TypeHabitation"
+            />
+        </StackLayout>
+        
+    </StackLayout>
+</ContentPage>

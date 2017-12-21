@@ -1,0 +1,10 @@
+/Users/natixis-dev/Projects/Prediction/UITests/bin/Debug/Prediction.UITests.dll
+/Users/natixis-dev/Projects/Prediction/UITests/bin/Debug/Prediction.UITests.pdb
+/Users/natixis-dev/Projects/Prediction/UITests/bin/Debug/nunit.framework.dll
+/Users/natixis-dev/Projects/Prediction/UITests/bin/Debug/Xamarin.UITest.dll
+/Users/natixis-dev/Projects/Prediction/UITests/bin/Debug/nunit.framework.xml
+/Users/natixis-dev/Projects/Prediction/UITests/bin/Debug/Xamarin.UITest.xml
+/Users/natixis-dev/Projects/Prediction/UITests/obj/Debug/Prediction.UITests.csprojResolveAssemblyReference.cache
+/Users/natixis-dev/Projects/Prediction/UITests/obj/Debug/Prediction.UITests.csproj.CoreCompileInputs.cache
+/Users/natixis-dev/Projects/Prediction/UITests/obj/Debug/Prediction.UITests.dll
+/Users/natixis-dev/Projects/Prediction/UITests/obj/Debug/Prediction.UITests.pdb
