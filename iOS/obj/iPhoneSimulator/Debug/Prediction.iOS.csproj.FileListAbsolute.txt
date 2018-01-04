@@ -70,4 +70,7 @@
 /Users/natixis-dev/Projects/Prediction/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone9.1-11.2/ibtool/_BundleResourceWithLogicalName.items
 /Users/natixis-dev/Projects/Prediction/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone9.1-11.2/actool/_PartialAppManifest.items
 /Users/natixis-dev/Projects/Prediction/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone9.1-11.2/actool/_BundleResourceWithLogicalName.items
+/Users/natixis-dev/Projects/Prediction/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone9.1-11.2/optimized/trash.png
+/Users/natixis-dev/Projects/Prediction/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone9.1-11.2/optimized/plus.png
+/Users/natixis-dev/Projects/Prediction/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone9.1-11.2/optimized/refresh.png
 /Users/natixis-dev/Projects/Prediction/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone9.1-11.2/optimized/

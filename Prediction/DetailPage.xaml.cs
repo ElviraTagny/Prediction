@@ -25,12 +25,16 @@ namespace Prediction
                 profile = await restService.GetProfileAsync(id);
             }
             Title = profile.Name;
+            NbEnfants.Text = profile.nbEnfn;
             SituationFamille.Text = profile.situationFamiliale;
             TypeHabitation.Text = profile.typeHabitation;
             TypeContrat.Text = profile.typeContratp;
-            if (profile.situationFamiliale == null) SituationFamille.IsVisible = false;
-            if (profile.typeHabitation == null) TypeHabitation.IsVisible = false;
-            if (profile.typeContratp == null) TypeContrat.IsVisible = false;
+            MontantEmprunt.Text = profile.montantEmprunt;
+            if (profile.nbEnfn == null) NbEnfantsSL.IsVisible = false;
+            if (profile.montantEmprunt == null) MontantEmpruntSL.IsVisible = false;
+            if (profile.situationFamiliale == null) SituationFamilleSL.IsVisible = false;
+            if (profile.typeHabitation == null) TypeHabitationSL.IsVisible = false;
+            if (profile.typeContratp == null) TypeContratSL.IsVisible = false;
         }
     }
 }

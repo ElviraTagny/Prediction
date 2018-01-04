@@ -103,7 +103,7 @@ namespace Prediction
             return false;
         }
 
-        public async Task DeleteProfileAsync(string id)
+        public async Task<bool> DeleteProfileAsync(string id)
         {
             var uri = new Uri(string.Format(RestUrl + id, string.Empty));
 
@@ -114,12 +114,14 @@ namespace Prediction
                 if (response.IsSuccessStatusCode)
                 {
                     Debug.WriteLine(@"Profile successfully deleted.");
+                    return true;
                 }
             }
             catch (Exception ex)
             {
                 Debug.WriteLine(@"ERROR {0}", ex.Message);
             }
+            return false;
         }
 
         public async Task<String> GetScoreSignaletique(String id)

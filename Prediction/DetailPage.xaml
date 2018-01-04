@@ -13,41 +13,69 @@
             x:Name="Name"
         />-->
         <StackLayout 
+            Margin="0,0,0,10"
             Orientation="Horizontal"
-            Margin="0,0,0,10">
+            x:Name="NbEnfantsSL">
+            <Label TextColor="Gray"
+                FontSize="17"
+                Text="Nombre d'enfants:"
+            />
             <Label TextColor="Black"
+                FontSize="17"
+                x:Name="NbEnfants"
+            />
+        </StackLayout>
+        <StackLayout 
+            Orientation="Horizontal"
+            Margin="0,0,0,10"
+            x:Name="SituationFamilleSL">
+            <Label TextColor="Gray"
                 FontSize="17"
                 Text="Situation de famille:"
             />
             <Label TextColor="Black"
-                FontSize="20"
+                FontSize="17"
                 x:Name="SituationFamille"
             />
         </StackLayout>
         <StackLayout 
             Orientation="Horizontal"
-            Margin="0,0,0,10">
-            <Label TextColor="Black"
+            Margin="0,0,0,10"
+            x:Name="TypeContratSL">
+            <Label TextColor="Gray"
                 FontSize="17"
                 Text="Type de contrat:"
             />
             <Label TextColor="Black"
-                FontSize="20"
+                FontSize="17"
                 x:Name="TypeContrat"
             />
         </StackLayout>
         <StackLayout 
             Margin="0,0,0,10"
-            Orientation="Horizontal">
-            <Label TextColor="Black"
+            Orientation="Horizontal"
+            x:Name="TypeHabitationSL">
+            <Label TextColor="Gray"
                 FontSize="17"
                 Text="Type d'habitation:"
             />
             <Label TextColor="Black"
-                FontSize="20"
+                FontSize="17"
                 x:Name="TypeHabitation"
             />
         </StackLayout>
-        
+        <StackLayout 
+            Margin="0,0,0,10"
+            Orientation="Horizontal"
+            x:Name="MontantEmpruntSL">
+            <Label TextColor="Gray"
+                FontSize="17"
+                Text="Montant Emprunt:"
+            />
+            <Label TextColor="Black"
+                FontSize="17"
+                x:Name="MontantEmprunt"
+            />
+        </StackLayout>
     </StackLayout>
 </ContentPage>

@@ -64,6 +64,11 @@
 /Users/natixis-dev/Projects/Prediction/Droid/bin/Debug/Microsoft.AspNetCore.WebUtilities.xml
 /Users/natixis-dev/Projects/Prediction/Droid/bin/Debug/Newtonsoft.Json.xml
 /Users/natixis-dev/Projects/Prediction/Droid/bin/Debug/Refit.xml
+/Users/natixis-dev/Projects/Prediction/Droid/obj/Debug/res/drawable/trash.png
+/Users/natixis-dev/Projects/Prediction/Droid/obj/Debug/res/drawable-xxhdpi/refresh.png
+/Users/natixis-dev/Projects/Prediction/Droid/obj/Debug/res/drawable/plus.png
+/Users/natixis-dev/Projects/Prediction/Droid/obj/Debug/res/drawable/refresh.png
+/Users/natixis-dev/Projects/Prediction/Droid/obj/Debug/res/drawable-xxhdpi/plus.png
 bin/Debug/FormsViewGroup.dll.mdb
 bin/Debug/Xamarin.Forms.Core.dll.mdb
 bin/Debug/Xamarin.Forms.Platform.Android.dll.mdb

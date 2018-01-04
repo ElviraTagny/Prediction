@@ -11,6 +11,7 @@ namespace Prediction
         public PredictionPage()
         {
             InitializeComponent();
+            restService = new RestService();
         }
 
         protected override void OnAppearing()
@@ -20,7 +21,6 @@ namespace Prediction
         }
 
         public async void InitData() {
-            restService = new RestService();
             Profiles.ItemsSource = await restService.RefreshDataAsync();
             if(Profiles.ItemsSource == null){
                 Profiles.IsVisible = false;
@@ -45,18 +45,27 @@ namespace Prediction
 
         async void OnAddItemClicked(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new FormulairePage());
+            await Navigation.PushAsync(new FormulairePage());
         }
 
+        async void OnRefreshClicked(object sender, EventArgs e)
+        {
+            InitData();
+        }
 
 
         //TODO set graphic resources to buttons
 
         async void OnDeleteRequested(object sender, System.EventArgs e){
-            var b = (Button)sender;
-            String id = b.CommandParameter.ToString();
-            await restService.DeleteProfileAsync(id);
-            InitData();
+            var res = await DisplayAlert("Attention", "Voulez-vous supprimer ce profil?", "OK", "Annuler");
+            if(res){
+                var b = (Button)sender;
+                String id = b.CommandParameter.ToString();
+                var result = await restService.DeleteProfileAsync(id);
+                if(result) await DisplayAlert("Suppression réussie", "Le profil a bien été supprimé !", "OK");
+                else await DisplayAlert("Erreur", "Une erreur est survenue lors de la suppresison de ce profil.", "OK");
+                InitData();
+            }
         }
 
         async void OnScoreRequested(object sender, System.EventArgs e){
@@ -64,9 +73,9 @@ namespace Prediction
             String id = b.CommandParameter.ToString();
             String result = await restService.GetScoreSignaletique(id.ToString());
             if(result.StartsWith("ERROR ")){
-                await DisplayAlert("Score ML - Error", result, "OK");
+                await DisplayAlert("Erreur", result, "OK");
             }
-            else await DisplayAlert("Score signalétique", "Votre score signalétique est: " + result, "OK");
+            else await DisplayAlert("Score signalétique", "Votre score signalétique est: \n\n" + result, "OK");
         }
 
         async void OnPredictionRequested(object sender, System.EventArgs e){
@@ -75,9 +84,9 @@ namespace Prediction
             String result = await restService.GetPredictionML(id);
             if (result.StartsWith("ERROR "))
             {
-                await DisplayAlert("Score ML - Error", result, "OK");
+                await DisplayAlert("Erreur", result, "OK");
             }
-            else await DisplayAlert("Score ML", "Votre score ML est: " + result, "OK");
+            else await DisplayAlert("Score ML", "Votre score ML est: \n\n" + result, "OK");
         }
     }
 }

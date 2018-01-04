@@ -1,31 +1,18 @@
 ﻿<Properties StartupConfiguration="{42C055FE-A6BA-4693-8364-D16714C7E122}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Prediction/FormulairePage.xaml.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Prediction/obj/Debug/Prediction.PredictionPage.xaml.g.cs">
     <Files>
-      <File FileName="Prediction/App.xaml.cs" Line="11" Column="65" />
-      <File FileName="Prediction/DetailPage.xaml" Line="54" Column="1" />
-      <File FileName="Prediction/DetailPage.xaml.cs" Line="25" Column="51" />
-      <File FileName="Prediction/PredictionPage.xaml.cs" Line="28" Column="42" />
-      <File FileName="Prediction/PredictionPage.xaml" Line="95" Column="1" />
-      <File FileName="Prediction/RestService.cs" Line="95" Column="23" />
+      <File FileName="Prediction/PredictionPage.xaml.cs" Line="39" Column="50" />
+      <File FileName="Prediction/PredictionPage.xaml" Line="28" Column="55" />
+      <File FileName="Prediction/RestService.cs" Line="11" Column="37" />
       <File FileName="Prediction/FormulairePage.xaml" Line="9" Column="1" />
-      <File FileName="Prediction/FormulairePage.xaml.cs" Line="234" Column="76" />
-      <File FileName="Prediction/Profile.cs" Line="23" Column="34" />
-      <File FileName="Prediction/IRestService.cs" Line="13" Column="44" />
-      <File FileName="iOS/Main.cs" Line="17" Column="1" />
+      <File FileName="Prediction/FormulairePage.xaml.cs" Line="324" Column="10" />
+      <File FileName="Prediction/Profile.cs" Line="7" Column="6" />
+      <File FileName="Prediction/obj/Debug/Prediction.PredictionPage.xaml.g.cs" Line="22" Column="78" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/natixis-dev/Projects/Prediction/Prediction/FormulairePage.xaml.cs" relfile="Prediction/FormulairePage.xaml.cs" line="314" column="1" />
-      <Breakpoint file="/Users/natixis-dev/Projects/Prediction/Prediction/FormulairePage.xaml.cs" relfile="Prediction/FormulairePage.xaml.cs" line="319" column="1" />
-      <Breakpoint file="/Users/natixis-dev/Projects/Prediction/Prediction/FormulairePage.xaml.cs" relfile="Prediction/FormulairePage.xaml.cs" line="324" column="1" />
-      <Breakpoint file="/Users/natixis-dev/Projects/Prediction/Prediction/FormulairePage.xaml.cs" relfile="Prediction/FormulairePage.xaml.cs" line="329" column="1" />
-      <Breakpoint file="/Users/natixis-dev/Projects/Prediction/Prediction/RestService.cs" relfile="Prediction/RestService.cs" line="95" column="1" />
-      <Breakpoint file="/Users/natixis-dev/Projects/Prediction/Prediction/FormulairePage.xaml.cs" relfile="Prediction/FormulairePage.xaml.cs" line="305" column="1" />
-      <Breakpoint file="/Users/natixis-dev/Projects/Prediction/Prediction/RestService.cs" relfile="Prediction/RestService.cs" line="77" column="1" />
-      <Breakpoint file="/Users/natixis-dev/Projects/Prediction/Prediction/RestService.cs" relfile="Prediction/RestService.cs" line="101" column="1" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.Prediction.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.21813ED7-F931-44A2-8D37-3DB8D22A2760">

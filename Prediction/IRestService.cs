@@ -12,6 +12,6 @@ namespace Prediction
 
         Task<bool> SaveProfileAsync(Profile item, bool isNewItem);
 
-        Task DeleteProfileAsync(string id);
+        Task<bool> DeleteProfileAsync(string id);
     }
 }

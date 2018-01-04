@@ -28,7 +28,7 @@ namespace Prediction
             InitializeComponent();
             restService = new RestService();
 
-            Title = "Saisir un nouveau profil";
+            Title = "Nouveau profil";
             double iosWidthRequest = 200;
             double androidWidthRequest = 220;
             double winPhoneWidthRequest = 200;
@@ -38,7 +38,8 @@ namespace Prediction
 
             this.DropSituationFamille = new DropDownPicker
             {
-                WidthRequest = Device.OnPlatform(iosWidthRequest, androidWidthRequest, winPhoneWidthRequest),
+                //WidthRequest = Device.OnPlatform(iosWidthRequest, androidWidthRequest, winPhoneWidthRequest),
+                HorizontalOptions=LayoutOptions.FillAndExpand,
                 HeightRequest = 40,
                 DropDownHeight = 150,
                 Title = "Situation familiale",
@@ -53,7 +54,8 @@ namespace Prediction
 
             this.DropHabitation = new DropDownPicker
             {
-                WidthRequest = Device.OnPlatform(iosWidthRequest, androidWidthRequest, winPhoneWidthRequest),
+                //WidthRequest = Device.OnPlatform(iosWidthRequest, androidWidthRequest, winPhoneWidthRequest),
+                HorizontalOptions = LayoutOptions.FillAndExpand,
                 HeightRequest = 40,
                 DropDownHeight = 150,
                 Title = "Habitation principale",
@@ -65,7 +67,8 @@ namespace Prediction
 
             this.DropTypeContrat = new DropDownPicker
             {
-                WidthRequest = Device.OnPlatform(iosWidthRequest, androidWidthRequest, winPhoneWidthRequest),
+                //WidthRequest = Device.OnPlatform(iosWidthRequest, androidWidthRequest, winPhoneWidthRequest),
+                HorizontalOptions = LayoutOptions.FillAndExpand,
                 HeightRequest = 40,
                 DropDownHeight = 150,
                 Title = "Type de contrat",
@@ -77,7 +80,8 @@ namespace Prediction
 
             this.DropSecteurActivite = new DropDownPicker
             {
-                WidthRequest = Device.OnPlatform(iosWidthRequest, androidWidthRequest, winPhoneWidthRequest),
+                //WidthRequest = Device.OnPlatform(iosWidthRequest, androidWidthRequest, winPhoneWidthRequest),
+                HorizontalOptions = LayoutOptions.FillAndExpand,
                 HeightRequest = 40,
                 DropDownHeight = 150,
                 Title = "Secteur d'activité",
@@ -145,19 +149,23 @@ namespace Prediction
                     },
                     this.DropSituationFamille,
                     new Label {
-                        Text = "Habitation principale"
+                        Text = "Habitation principale",
+                            Margin = new Thickness (0, 10, 0, 0)
                     },
                     this.DropHabitation,
                     new Label {
-                        Text = "Type de contrat"
+                        Text = "Type de contrat",
+                            Margin = new Thickness (0, 10, 0, 0)
                     },
                     this.DropTypeContrat,
                     new Label {
-                        Text = "Secteur d'activité"
+                        Text = "Secteur d'activité",
+                            Margin = new Thickness (0, 10, 0, 0)
                     },
                     this.DropSecteurActivite,
                     new Label {
-                        Text = "Profession"
+                        Text = "Profession",
+                            Margin = new Thickness (0, 10, 0, 0)
                     },
                     new Entry {
                         Keyboard = Keyboard.Default,
@@ -165,80 +173,83 @@ namespace Prediction
                     },
                     //this.DropProfession,
                     new Label {
-                        Text = "Age"
+                        Text = "Age",
+                            Margin = new Thickness (0, 10, 0, 0)
                     },
                     new Entry {
-                        Keyboard = Keyboard.Numeric,
-                        MinimumWidthRequest = 100
+                        Keyboard = Keyboard.Numeric
                     },
                     new Label {
-                        Text = "Salaire mensuel net"
+                        Text = "Salaire mensuel net",
+                            Margin = new Thickness (0, 10, 0, 0)
                     },
                     new Entry {
-                        Keyboard = Keyboard.Numeric,
-                        MinimumWidthRequest = 100
+                        Keyboard = Keyboard.Numeric
                     },
                     new Label {
-                        Text = "Autres revenus mensuels"
+                        Text = "Autres revenus mensuels",
+                            Margin = new Thickness (0, 10, 0, 0)
                     },
                     new Entry {
-                        Keyboard = Keyboard.Numeric,
-                        MinimumWidthRequest = 100
+                        Keyboard = Keyboard.Numeric
                     },
                     new Label {
-                        Text = "Année d'embauche"
+                        Text = "Année d'embauche",
+                            Margin = new Thickness (0, 10, 0, 0)
                     },
                     new Entry {
-                        Keyboard = Keyboard.Numeric,
-                        MinimumWidthRequest = 100
+                        Keyboard = Keyboard.Numeric
                     },
                     new Label {
-                        Text = "Loyer/Crédit immobilier de résidence principale"
+                        Text = "Loyer/Crédit immobilier de résidence principale",
+                            Margin = new Thickness (0, 10, 0, 0)
                     },
                     new Entry {
-                        Keyboard = Keyboard.Numeric,
-                        MinimumWidthRequest = 100
+                        Keyboard = Keyboard.Numeric
                     },
                     new Label {
-                        Text = "Loyer/Crédit immobilier de résidence secondaire"
+                        Text = "Loyer/Crédit immobilier de résidence secondaire",
+                            Margin = new Thickness (0, 10, 0, 0)
                     },
                     new Entry {
-                        Keyboard = Keyboard.Numeric,
-                        MinimumWidthRequest = 100
+                        Keyboard = Keyboard.Numeric
                     },
                     new Label {
-                        Text = "Montant charges"
+                        Text = "Montant charges",
+                            Margin = new Thickness (0, 10, 0, 0)
                     },
                     new Entry {
-                        Keyboard = Keyboard.Numeric,
-                        MinimumWidthRequest = 100
+                        Keyboard = Keyboard.Numeric
                     },
                     new Label {
-                        Text = "Autres crédits"
+                        Text = "Autres crédits",
+                            Margin = new Thickness (0, 10, 0, 0)
                     },
                         montantEmpruntEntry,
                     new Label {
-                        Text = "Nombre d'enfants"
+                        Text = "Nombre d'enfants",
+                            Margin = new Thickness (0, 10, 0, 0)
                     },
                         nbEnfantsEntry,
                     new Label {
-                        Text = "Nombre de personnes attachées au dossier"
+                        Text = "Nombre de personnes rattachées au dossier",
+                            Margin = new Thickness (0, 10, 0, 0)
                     },
                     new Entry {
-                        Keyboard = Keyboard.Numeric,
-                        MinimumWidthRequest = 100
+                        Keyboard = Keyboard.Numeric
                     },
                     new StackLayout {
                         Orientation = StackOrientation.Horizontal,
                         VerticalOptions = LayoutOptions.FillAndExpand,
                             HorizontalOptions = LayoutOptions.EndAndExpand,
-
+                            Margin = new Thickness (0, 10, 0, 0),
                         Children = {
                             new Button
                             {
-                                Text = "Créer",
+                                    Text = "Créer",
                                 BackgroundColor = Color.RoyalBlue,
                                 TextColor = Color.White,
+                                    WidthRequest = 90,
                                 Command = new Command(async () => {
                                     newProfile = new Profile();
                                     newProfile.situationFamiliale = DropSituationFamille.SelectedItem.ToString();
@@ -258,6 +269,7 @@ namespace Prediction
                                 Text = "Annuler",
                                 BackgroundColor = Color.Gray,
                                 TextColor = Color.White,
+                                    WidthRequest = 90,
                                 Command = new Command(async () => {
                                     await Navigation.PopAsync();
                                 })
@@ -310,7 +322,6 @@ namespace Prediction
 
         private void DropHabitationSelected(object sender, string e)
         {
-            
             System.Diagnostics.Debug.WriteLine("selected text change DropHabitation: " + e);
         }
 
