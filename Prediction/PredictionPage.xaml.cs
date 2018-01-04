@@ -11,13 +11,27 @@ namespace Prediction
         public PredictionPage()
         {
             InitializeComponent();
-            InitData();
+        }
 
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+            InitData();
         }
 
         public async void InitData() {
             restService = new RestService();
             Profiles.ItemsSource = await restService.RefreshDataAsync();
+            if(Profiles.ItemsSource == null){
+                Profiles.IsVisible = false;
+                await DisplayAlert("Network issue", "The list could not be retrieved. Please check your network connection.", "OK");
+                //Error.IsVisible = true;
+                //Error.Text = "Network issue. \nThe list of profiles can\'t be retrieved.";
+            }
+            else {
+                Profiles.IsVisible = true;
+                //Error.IsVisible = false;
+            }
         }
 
         async void OnItemTapped(object sender, ItemTappedEventArgs e)
@@ -48,15 +62,22 @@ namespace Prediction
         async void OnScoreRequested(object sender, System.EventArgs e){
             var b = (Button)sender;
             String id = b.CommandParameter.ToString();
-            String predictionValue = await restService.GetScoreSignaletique(id.ToString());
-            await DisplayAlert("Score signalétique", "Votre score signalétique est: " + predictionValue, "OK");
+            String result = await restService.GetScoreSignaletique(id.ToString());
+            if(result.StartsWith("ERROR ")){
+                await DisplayAlert("Score ML - Error", result, "OK");
+            }
+            else await DisplayAlert("Score signalétique", "Votre score signalétique est: " + result, "OK");
         }
 
         async void OnPredictionRequested(object sender, System.EventArgs e){
             var b = (Button) sender;
             String id = b.CommandParameter.ToString();
-            String predictionValue = await restService.GetPredictionML(id);
-            await DisplayAlert("Score ML", "Votre score ML est: " + predictionValue, "OK");
+            String result = await restService.GetPredictionML(id);
+            if (result.StartsWith("ERROR "))
+            {
+                await DisplayAlert("Score ML - Error", result, "OK");
+            }
+            else await DisplayAlert("Score ML", "Votre score ML est: " + result, "OK");
         }
     }
 }

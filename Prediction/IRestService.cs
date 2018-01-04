@@ -10,7 +10,7 @@ namespace Prediction
 
         Task<Profile> GetProfileAsync(String id);
 
-        Task SaveProfileAsync(Profile item, bool isNewItem);
+        Task<bool> SaveProfileAsync(Profile item, bool isNewItem);
 
         Task DeleteProfileAsync(string id);
     }

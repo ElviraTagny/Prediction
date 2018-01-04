@@ -67,7 +67,7 @@
 /Users/natixis-dev/Projects/Prediction/iOS/bin/iPhoneSimulator/Debug/Microsoft.AspNetCore.WebUtilities.xml
 /Users/natixis-dev/Projects/Prediction/iOS/bin/iPhoneSimulator/Debug/Newtonsoft.Json.xml
 /Users/natixis-dev/Projects/Prediction/iOS/bin/iPhoneSimulator/Debug/Refit.xml
-/Users/natixis-dev/Projects/Prediction/iOS/obj/iPhoneSimulator/Debug/ibtool/_BundleResourceWithLogicalName.items
-/Users/natixis-dev/Projects/Prediction/iOS/obj/iPhoneSimulator/Debug/actool/_PartialAppManifest.items
-/Users/natixis-dev/Projects/Prediction/iOS/obj/iPhoneSimulator/Debug/actool/_BundleResourceWithLogicalName.items
-/Users/natixis-dev/Projects/Prediction/iOS/obj/iPhoneSimulator/Debug/optimized/
+/Users/natixis-dev/Projects/Prediction/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone9.1-11.2/ibtool/_BundleResourceWithLogicalName.items
+/Users/natixis-dev/Projects/Prediction/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone9.1-11.2/actool/_PartialAppManifest.items
+/Users/natixis-dev/Projects/Prediction/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone9.1-11.2/actool/_BundleResourceWithLogicalName.items
+/Users/natixis-dev/Projects/Prediction/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone9.1-11.2/optimized/

@@ -28,6 +28,9 @@ namespace Prediction
             SituationFamille.Text = profile.situationFamiliale;
             TypeHabitation.Text = profile.typeHabitation;
             TypeContrat.Text = profile.typeContratp;
+            if (profile.situationFamiliale == null) SituationFamille.IsVisible = false;
+            if (profile.typeHabitation == null) TypeHabitation.IsVisible = false;
+            if (profile.typeContratp == null) TypeContrat.IsVisible = false;
         }
     }
 }

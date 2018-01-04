@@ -41,6 +41,7 @@ namespace Prediction
             }
             catch (Exception ex)
             {
+                Items = null;
                 Debug.WriteLine(@"ERROR {0}", ex.Message);
             }
 
@@ -58,22 +59,25 @@ namespace Prediction
                     var content = await response.Content.ReadAsStringAsync();
                     item = JsonConvert.DeserializeObject<Profile>(content);
                 }
-
             }
             catch (Exception ex)
             {
+                item = null;
                 Debug.WriteLine(@"ERROR {0}", ex.Message);
             }
             return item;
         }
 
-        public async Task SaveProfileAsync(Profile item, bool isNewItem = false)
+        public async Task<bool> SaveProfileAsync(Profile item, bool isNewItem = false)
         {
             var uri = new Uri(string.Format(RestUrl, string.Empty));
 
             try
             {
                 var json = JsonConvert.SerializeObject(item);
+                //json.Replace(":0,", string.Empty); //removing id attribute
+                //json.Replace("\\\"id\\\"", string.Empty); //removing id attribute
+                json = json.Replace("\"id\":0,", string.Empty); //removing id attribute
                 var content = new StringContent(json, Encoding.UTF8, "application/json");
 
                 HttpResponseMessage response = null;
@@ -88,14 +92,15 @@ namespace Prediction
 
                 if (response.IsSuccessStatusCode)
                 {
-                    Debug.WriteLine(@"Profile successfully saved.");
+                    //Debug.WriteLine(@"Profile successfully saved.");
+                    return true;
                 }
-
             }
             catch (Exception ex)
             {
                 Debug.WriteLine(@"ERROR {0}", ex.Message);
             }
+            return false;
         }
 
         public async Task DeleteProfileAsync(string id)
@@ -110,7 +115,6 @@ namespace Prediction
                 {
                     Debug.WriteLine(@"Profile successfully deleted.");
                 }
-
             }
             catch (Exception ex)
             {
@@ -130,11 +134,11 @@ namespace Prediction
                     var content = await response.Content.ReadAsStringAsync();
                     item = JsonConvert.DeserializeObject<Profile>(content);
                 }
-
             }
             catch (Exception ex)
             {
                 Debug.WriteLine(@"ERROR {0}", ex.Message);
+                return @"ERROR { " + ex.Message + " }";
             }
             return item.predictionValue;
         }
@@ -156,6 +160,7 @@ namespace Prediction
             catch (Exception ex)
             {
                 Debug.WriteLine(@"ERROR {0}", ex.Message);
+                return @"ERROR { " + ex.Message + " }";
             }
             return item.predictionValue;
         }
